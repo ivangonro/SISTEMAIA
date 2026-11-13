@@ -1,0 +1,14 @@
+node_modules/
+dist/
+build/
+.env
+.env.local
+*.log
+.vercel
+.DS_Store
+coverage/
+
+# SDKs locales y herramientas (no van al repo)
+android-sdk/
+flutter/
+commandlinetools.zip

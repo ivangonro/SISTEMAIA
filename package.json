@@ -1,0 +1,24 @@
+{
+  "name": "sistema-ia",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Sistema de administración: presentaciones PowerPoint/video de desarrollo organizacional, evaluaciones y matrices de habilidades",
+  "workspaces": [
+    "apps/api",
+    "apps/web"
+  ],
+  "scripts": {
+    "dev:api": "npm run dev --workspace apps/api",
+    "dev:web": "npm run dev --workspace apps/web",
+    "build": "npm run build --workspace apps/web",
+    "seed": "node scripts/seed.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
+    "fluent-ffmpeg": "^2.1.3",
+    "puppeteer": "^25.17.0"
+  }
+}
